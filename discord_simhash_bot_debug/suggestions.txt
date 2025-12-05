@@ -1,0 +1,128 @@
+so the professor mentioned something about machine learning embeded space searching thingy? like smallest search between two dots in a space thats what they mentioned and they told me to definetly use that instead of the outdated LSH for this project he told me that thing will of course have some very good algorithms that i might use (remember algorithms are essential part of my project). also they mentioned that i should do the evaluation part better because , use some precision / not finding balance which sould be balanced and for the testing either find some database of questions / answers and send them in a newly chat and tests the questions with asking the new question so it finds the answer and test the precision/ thing . the second idea was the test if some server admin lets me to use their server chat for my testing. like they talked a lot of termins non stop for 15 minutes for me what to do and from this notes that i could remmeber can u try to make a notes thingy for me?
+
+
+
+
+Absolutely — that’s a great sign, by the way 🎯
+It means your professor liked your idea but wants you to level it up with modern algorithms and measurable evaluation.
+
+Here’s a clean, organized summary of what they said — written like proper project notes 👇
+
+📝 Consultation Notes — Advanced Discord Similarity Bot
+🔹 Project Direction
+
+Continue building the Discord bot that detects and suggests similar questions.
+
+Replace or complement SimHash/LSH with a modern vector-based (embedding) approach for text similarity.
+
+Focus on algorithmic depth and evaluation metrics — not just functionality.
+
+🔹 Algorithmic Focus
+➤ 1. Move from hashing to embedding-based similarity
+
+Use sentence embeddings (e.g., from models like SentenceTransformers, word2vec, or OpenAI embeddings).
+
+Each message → converted into a vector in high-dimensional space (like a dot in a 384D or 768D space).
+
+Similar messages → have vectors closer together (smaller cosine distance).
+
+Search for nearest neighbors = “finding the closest points in embedding space.”
+
+➤ 2. Implement an efficient vector search algorithm
+
+Use Approximate Nearest Neighbor (ANN) techniques for fast lookups:
+
+HNSW (Hierarchical Navigable Small World Graphs)
+
+FAISS (Facebook AI Similarity Search)
+
+Annoy (Spotify’s Approximate Nearest Neighbor)
+
+These replace old LSH-style indexing — much faster and more accurate.
+
+Keep the algorithmic side strong: nearest-neighbor graphs, cosine distance, dimensionality reduction, etc.
+
+🔹 Evaluation Plan (make this measurable)
+➤ 1. Define metrics
+
+Precision = proportion of retrieved messages that were truly relevant.
+
+Recall = proportion of relevant messages that were actually retrieved.
+
+F1-score = balance between precision and recall.
+
+➤ 2. Define “Not Finding” metric
+
+Also evaluate cases where no answer is found (false negatives).
+
+The goal is to balance precision vs. not finding anything → a tradeoff between missing matches and showing wrong ones.
+
+🔹 Testing / Data
+
+You need a dataset of question–answer pairs or real chat messages.
+
+Two options mentioned:
+
+📘 Dataset approach:
+
+Find a public Q&A dataset (e.g., Stack Overflow, Quora Questions, FAQ pages).
+
+Feed those questions/answers into a test Discord channel.
+
+Send new questions and check if the bot correctly retrieves the matching one.
+
+Evaluate precision, recall, F1.
+
+💬 Real server testing:
+
+Ask a Discord server admin for permission to test on their chat logs.
+
+The bot indexes their real messages.
+
+Then you test how well it finds older answers.
+
+🔹 Implementation Plan (new roadmap)
+
+✅ Keep SimHash prototype for reference.
+
+🧠 Add embedding-based text encoder (e.g., SentenceTransformers).
+
+⚡ Use FAISS or Annoy to store & search embeddings.
+
+📊 Implement evaluation pipeline with precision/recall metrics.
+
+📈 Compare both approaches (SimHash vs. Embeddings).
+
+💬 Prepare demo bot that can run simple retrieval tests.
+
+🔹 Keywords to Mention in Report
+
+(these make your project sound “AADS-level”)
+
+Vector embeddings
+
+Cosine similarity
+
+High-dimensional space
+
+Approximate nearest neighbor search (ANN)
+
+FAISS / HNSW / Annoy
+
+Precision, recall, F1-score
+
+Retrieval accuracy evaluation
+
+🔹 Extra Credit Ideas
+
+Add dimensionality reduction (e.g., PCA, UMAP).
+
+Add visualization of embedding clusters (e.g., using t-SNE).
+
+Store embeddings in a local DB (e.g., SQLite + FAISS index).
+
+Evaluate performance (speed + accuracy tradeoff).
+
+✅ Summary Sentence (for you to say if asked again)
+
+“After the consultation, I plan to upgrade my SimHash-based system into a modern embedding-based text similarity model using nearest-neighbor algorithms like FAISS or HNSW. I’ll evaluate it using precision, recall, and F1-score on question–answer data or real Discord messages.”
