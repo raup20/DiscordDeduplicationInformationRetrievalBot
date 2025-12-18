@@ -1,0 +1,82 @@
+[
+  {
+    "question": "How do I install Python on Windows?",
+    "answer": "Download the installer from python.org, run it, and make sure to check the option to add Python to PATH."
+  },
+  {
+    "question": "How do I install pip?",
+    "answer": "pip is included with Python by default. You can update it using: python -m pip install --upgrade pip."
+  },
+  {
+    "question": "How do I create a virtual environment in Python?",
+    "answer": "Use python -m venv venv to create a virtual environment, then activate it using the activation script."
+  },
+  {
+    "question": "What is a Python list?",
+    "answer": "A Python list is a mutable, ordered collection that can store elements of different types."
+  },
+  {
+    "question": "How do I install IntelliJ IDEA?",
+    "answer": "Download the JetBrains Toolbox from jetbrains.com and install IntelliJ IDEA through the toolbox."
+  },
+  {
+    "question": "How do I clone a Git repository?",
+    "answer": "Use git clone followed by the repository URL in your terminal."
+  },
+  {
+    "question": "What is Git used for?",
+    "answer": "Git is a version control system used to track changes in code and collaborate with others."
+  },
+  {
+    "question": "How do I commit changes in Git?",
+    "answer": "First stage changes using git add, then create a commit using git commit -m."
+  },
+  {
+    "question": "What is a Python dictionary?",
+    "answer": "A Python dictionary is a key-value data structure that allows fast lookup by key."
+  },
+  {
+    "question": "How do I install packages using pip?",
+    "answer": "Use pip install followed by the package name in your terminal."
+  },
+  {
+    "question": "What is a virtual environment?",
+    "answer": "A virtual environment isolates Python dependencies for a specific project."
+  },
+  {
+    "question": "How do I run a Python script?",
+    "answer": "Navigate to the script directory and run python script_name.py in the terminal."
+  },
+  {
+    "question": "What is a Python tuple?",
+    "answer": "A Python tuple is an immutable ordered collection of elements."
+  },
+  {
+    "question": "How do I update Python packages?",
+    "answer": "Use pip install --upgrade followed by the package name."
+  },
+  {
+    "question": "What is GitHub?",
+    "answer": "GitHub is a platform for hosting Git repositories and collaborating on software projects."
+  },
+  {
+    "question": "How do I create a Git branch?",
+    "answer": "Use git branch to create a new branch and git checkout to switch to it."
+  },
+  {
+    "question": "What is an IDE?",
+    "answer": "An IDE is an Integrated Development Environment that provides tools for writing and debugging code."
+  },
+  {
+    "question": "How do I install VS Code?",
+    "answer": "Download Visual Studio Code from code.visualstudio.com and follow the installer instructions."
+  },
+  {
+    "question": "What is a Python function?",
+    "answer": "A Python function is a reusable block of code defined using the def keyword."
+  },
+  {
+    "question": "How do I create a Python class?",
+    "answer": "Use the class keyword followed by the class name and define methods inside it."
+  }
+]
