@@ -1,5 +1,5 @@
 import json
-from simhash_engine import simhash, hamming_distance
+from discord_simhash_bot_debug.old.simhash_engine import simhash, hamming_distance
 
 DB_FILE = "messages.json"
 
